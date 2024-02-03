@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+	font-family: 'calibri', 'arial', sans-serif;
+}
+
+.loginContainer {
+	margin: 10px auto;
+	padding: 10px;
+	display: grid;
+	justify-items: center;
+
+	max-width: 1300px;
+}
+
+.loginContainer .welcomeHeader {
+	font-size: clamp(35px, 5vw, 50px);
+	margin: 20px;
+}
+
+.loginForm {
+	display: grid;
+	background-color: #a8d875;
+	padding: 15px 25px 20px;
+	border-radius: 15px;
+	max-width: 500px;
+	width: 100%;
+	box-shadow: 3px 2px 8px 0px #9b9b9b;
+}
+
+.loginContainer h2,
+.loginContainer h3 {
+	text-align: center;
+}
+
+.loginContainer h3 {
+	padding: 0;
+	margin: 0 0 10px;
+
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+.loginContainer .inputWrapper {
+	width: 100%;
+	position: relative;
+	margin: 10px 0;
+}
+
+.loginContainer .icon {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+}
+
+.loginContainer .inputPW,
+.loginContainer .inputTxt {
+	border: solid grey 3px;
+	border-radius: 10px;
+	padding: 15px 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+}
+
+.loginContainer .inputPW:hover,
+.loginContainer .inputTxt:hover {
+	border-color: #2148aa;
+}
+
+.loginContainer .inputWrapper:has(.inputCB) {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 30px;
+}
+
+.loginContainer .actionsWrapper {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.loginContainer .actionsWrapper img {
+	width: 20px;
+}
+
+.loginContainer .actionsWrapper button {
+	background-color: transparent;
+	border: none;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.loginContainer .actionsWrapper :is(a, button) {
+	text-decoration: underline;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.loginContainer .actionsWrapper :is(a:hover, button:hover) {
+	color: #2148aa;
+}
+
+.loginContainer .loginForm > button {
+	border-radius: 10px;
+	padding: 12px 10px;
+	background-color: #2148aa;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border: 2px solid grey;
+	margin: 10px 0 20px;
+}
+
+.loginContainer button:hover {
+	scale: 1.05;
+}
+
+.loginContainer button,
+.loginContainer a {
+	cursor: pointer;
+}
+
+.loginContainer .errorMsg {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+}
